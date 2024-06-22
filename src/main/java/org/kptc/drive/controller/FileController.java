@@ -63,7 +63,7 @@ public class FileController {
             fileService.delete(fileId);
             return HttpStatus.OK;
         } catch (IllegalStateException e) {
-            return HttpStatus.NOT_MODIFIED;
+            return HttpStatus.NOT_FOUND;
         }
     }
 
